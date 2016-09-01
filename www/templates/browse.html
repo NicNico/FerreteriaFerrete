@@ -1,0 +1,31 @@
+<ion-view view-title="Browse">
+  <ion-content>
+    <h1>Hola Ionic</h1>
+     {{v_PrecioMart}}
+	<div class="list">
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">$martillo</span>
+	    <input type="text" ng-model = "v_PrecioMart" placeholder="ingresar precio martillo:">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">$pinturas</span>
+	    <input type="text" ng-model = "v_PrecioPint" placeholder="ingresar precio pinturas:">
+	   
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">$aerosoles</span>
+	    <input type="text" ng-model = "v_PrecioAero" placeholder="ingresar precio  aerosoles:">
+	  </label>
+	</div>
+	
+
+	<div class="button-bar bar-positive">
+	  <a class="button"  ng-click="SumarPrecios(v_PrecioMart , v_PrecioPint , v_PrecioAero)">Sumar</a>
+	  <a class="button"  ng-click="Promedio(v_PrecioMart , v_PrecioPint , v_PrecioAero)">Promedio</a>
+	  <a class="button"  ng-click="CalcularIva(v_PrecioMart , v_PrecioPint , v_PrecioAero)">Calcular Iva</a>
+	</div>
+
+  {{mensajeRespuesta}}
+
+  </ion-content>
+</ion-view>
